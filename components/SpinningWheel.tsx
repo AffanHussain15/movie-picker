@@ -196,7 +196,7 @@ export default function SpinningWheel({ movies, onWinner }: SpinningWheelProps) 
           ref={canvasRef}
           width={350}
           height={350}
-          className="rounded-full shadow-[0_0_50px_rgba(229,9,20,0.15)] bg-zinc-950"
+          className="rounded-full shadow-[0_0_50px_rgba(229,9,20,0.15)] bg-zinc-950 max-w-full h-auto"
         />
         {/* Glow center dot */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-[#E50914] shadow-[0_0_10px_#E50914] pointer-events-none" />

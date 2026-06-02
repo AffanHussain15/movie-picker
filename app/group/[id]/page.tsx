@@ -428,7 +428,7 @@ export default function GroupDashboard({ params }: { params: Promise<{ id: strin
               {/* Language */}
               <div className="space-y-2">
                 <label className="text-sm font-semibold text-zinc-300">Preferred Language</label>
-                <div className="grid grid-cols-2 sm:grid-cols-6 gap-2.5">
+                <div className="grid grid-cols-3 sm:grid-cols-6 gap-2.5">
                   {LANGUAGES.map((lang) => {
                     const isSelected = selectedLanguage === lang;
                     return (

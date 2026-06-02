@@ -50,7 +50,7 @@ export default function Home() {
           ⚡ Packed with Premium Features
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Card 1 */}
           <div className="glass-panel rounded-2xl p-6 hover:border-[#E50914]/30 hover:shadow-[0_10px_30px_rgba(229,9,20,0.08)] transition-all">
             <div className="rounded-lg bg-zinc-800/80 border border-zinc-700/50 p-3 text-[#E50914] w-fit mb-4">

@@ -42,8 +42,8 @@ export default function MovieCard({
           </div>
         )}
 
-        {/* Action Button Overlays */}
-        <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+        {/* Action Button Overlays — desktop hover */}
+        <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity hidden md:flex items-center justify-center gap-4">
           {onPlayTrailer && (
             <button
               onClick={() => onPlayTrailer(movie.trailer)}
@@ -67,6 +67,35 @@ export default function MovieCard({
             </button>
           )}
         </div>
+
+        {/* Mobile action buttons — always visible */}
+        {(onPlayTrailer || onToggleWatchlist) && (
+          <div className="absolute bottom-0 left-0 right-0 flex gap-2 p-3 md:hidden">
+            {onPlayTrailer && (
+              <button
+                onClick={() => onPlayTrailer(movie.trailer)}
+                className="flex-1 flex items-center justify-center gap-1.5 rounded-lg bg-[#E50914]/90 text-white font-bold py-2 text-xs shadow-lg"
+                title="Watch Trailer"
+              >
+                <Play className="h-4 w-4 fill-current" />
+                Trailer
+              </button>
+            )}
+            {onToggleWatchlist && (
+              <button
+                onClick={onToggleWatchlist}
+                className={`flex items-center justify-center rounded-lg border py-2 px-3 text-xs font-bold shadow-lg transition-colors ${
+                  isSaved
+                    ? 'bg-white border-white text-black'
+                    : 'bg-black/70 border-white/20 text-white'
+                }`}
+                title={isSaved ? 'Remove from Watchlist' : 'Save to Watchlist'}
+              >
+                {isSaved ? <HeartOff className="h-4 w-4" /> : <Heart className="h-4 w-4" />}
+              </button>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Description Content */}
