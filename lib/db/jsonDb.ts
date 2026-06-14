@@ -3,7 +3,7 @@ import path from 'path';
 import { Group } from './models';
 
 // We store the DB file in the app data directory or workspace root
-const DB_DIR = '/Users/haiderali/.gemini/antigravity';
+const DB_DIR = path.join(process.cwd(), 'data');
 const DB_FILE = path.join(DB_DIR, 'movie-picker-db.json');
 
 function ensureDbExists() {

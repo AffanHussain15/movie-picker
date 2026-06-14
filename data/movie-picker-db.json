@@ -1,0 +1,68 @@
+{
+  "groups": [
+    {
+      "id": "QAO4XV",
+      "name": "friday nh",
+      "memberCount": 3,
+      "members": [
+        {
+          "id": "mem-1-3ql5",
+          "name": "Ali",
+          "swipes": {},
+          "preferences": {
+            "genres": [
+              "Comedy"
+            ],
+            "mood": "Exciting",
+            "runtime": "90-120",
+            "language": "Korean",
+            "yearRange": [
+              1995,
+              2003
+            ]
+          }
+        },
+        {
+          "id": "mem-2-cziu",
+          "name": "Ahmed",
+          "swipes": {},
+          "preferences": {
+            "genres": [
+              "Sci-Fi"
+            ],
+            "mood": "Exciting",
+            "runtime": "any",
+            "language": "Any",
+            "yearRange": [
+              1995,
+              2026
+            ]
+          }
+        },
+        {
+          "id": "mem-3-y2ob",
+          "name": "Sara",
+          "swipes": {},
+          "preferences": {
+            "genres": [
+              "Thriller",
+              "Sci-Fi",
+              "Comedy",
+              "Adventure"
+            ],
+            "mood": "Feel Good",
+            "runtime": "any",
+            "language": "Any",
+            "yearRange": [
+              1995,
+              2026
+            ]
+          }
+        }
+      ],
+      "watchlist": [],
+      "createdAt": "2026-06-14T08:14:17.601Z",
+      "updatedAt": "2026-06-14T08:17:12.537Z"
+    }
+  ]
+}
